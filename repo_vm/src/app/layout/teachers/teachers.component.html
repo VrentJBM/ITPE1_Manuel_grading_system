@@ -1,0 +1,111 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teachers</title> 
+    <link rel="stylesheet" href="teachers.component.scss">
+</head>
+<body>
+    <section class="main-content">
+        <div class="app">
+            <header class="sub-menu">
+                <div class="title"> Dashboard </div>
+                <ul class="menu">
+                    <li> <a routerLink="/manage/dashboard"> Courses </a></li>
+                    <li class="selected"><a routerLink="/manage/teachers"> Teachers </a></li>
+                    <li><a routerLink="/manage/students">Students </a></li>
+                    <li> Years </li>
+                    <li> Grades </li>
+                </ul>
+
+                <div class="user-options">
+                    <div class="icon"> <i class="bi bi-search" aria-hidden="true"></i> </div>
+                    <div class="icon"> <i class="bi bi-bell" aria-hidden="true"></i>
+                        <div class="badge"> 3 </div>
+                    </div>
+                    <div class="icon user-img"> <img src="assets/images/sampleteacher1.jpg" alt="Image 001" /> </div>
+                </div>
+            </header>
+
+            <section class="app-content">
+
+                <header>
+                    <div class="searchbox">
+                        <div class="icon"> <i class="bi bi-search" aria-hidden="true"></i> </div>
+                       <input type="text" name="search" placeholder="Search for teacher" class="search-text">
+                    </div>
+
+                    <div class="app-list-options">
+                        <div class="sort-dropdown"> Sort by <span class="by"> A-Z </span> <i class="fa fa-sort-amount-desc" aria-hidden="true"></i>
+                            <div class="drop"> <i class="bi bi-caret-down-fill" aria-hidden="true"></i> </div>
+                        </div>
+                        <div class="icon"> <i class="fa fa-filter" aria-hidden="true"></i> </div>
+                        <div class="display-group">
+                            <div class="icon"> <i class="fa fa-bars" aria-hidden="true"></i> </div>
+                            <div class="icon selected"> <i class="fa fa-th" aria-hidden="true"></i> </div>
+                        </div>
+                    </div>
+                </header>
+
+                <ul class="projects">
+                    <li class="project-item">
+                        <div class="logo-row"> <img src="assets/images/sampleteacher1.jpg" alt="Image 001" />
+                            <div class="icon"> <i class="fa fa-ellipsis-h icon" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="title-row">
+                            <h3> Thomas J. Peterson </h3>
+                            <div> ITPC 11 - Information Management 2 </div>
+                        </div>
+                        <div class="desc-row">
+                            <p> Description Placeholder </div>
+                        <div class="title-row">Sections currently handling:</div>
+                        <div class="footer-row">
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 1-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 2-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 2-2 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 3-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 3-2 </div>
+                        </div>
+                    </li>
+
+                    <li class="project-item">
+                        <div class="logo-row"> <img src="assets/images/sampleteacher2.jpg" alt="Image 001" />
+                            <div class="icon"> <i class="fa fa-ellipsis-h icon" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="title-row">
+                            <h3> Katherine C. Desmanos </h3>
+                            <div> ITPC 12 - Data Communication and Networking 1</div>
+                        </div>
+                        <div class="desc-row">
+                            <p> Description Placeholder </div>
+                        <div class="title-row">Sections currently handling:</div>
+                        <div class="footer-row">
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 1-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 2-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 3-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 3-2 </div>
+                        </div>
+                    </li>
+
+                    <li class="project-item">
+                        <div class="logo-row"> <img src="assets/images/sampleteacher3.jpg" alt="Image 001" />
+                            <div class="icon"> <i class="fa fa-ellipsis-h icon" aria-hidden="true"></i></div>
+                        </div>
+                        <div class="title-row">
+                            <h3> Ark O. Pernividad </h3>
+                            <div> ITPC 13 - System Analysis and Design </div>
+                        </div>
+                        <div class="desc-row">
+                            <p> Description Placeholder </div>
+                        <div class="title-row">Sections currently handling:</div>
+                        <div class="footer-row">
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 1-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 2-1 </div>
+                            <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> BSIT 3-1 </div>
+                        </div>
+                    </li>
+                </ul>
+
+            </section>    
+         </div>
+    </section>
+</body>
