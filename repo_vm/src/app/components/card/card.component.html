@@ -1,8 +1,33 @@
-<div class="card">
+<!--<div class="card">
     <img src="assets/images/dog.jpg" alt="Avatar" class="img">
     <div class="container">
       <h4><b>{{name}}</b></h4>
       <p>{{position}}</p>
       <p>{{company}}</p>
     </div>
+  </div> -->
+<head>
+  <link rel="stylesheet" href="card.component.scss">
+</head>
+
+
+<body>
+<li class="project-item">
+  <div class="logo-row"> <img src="{{courseImage}}" alt="Image 001" />
+    <div class="icon"> <i class="fa fa-ellipsis-h icon" aria-hidden="true"></i> </div>
   </div>
+  <div class="title-row">
+      <h3>{{course}}</h3>
+      <div>{{courseTitle}}</div>
+  </div>
+  <div class="desc-row">
+      <p>{{description}}</div>
+  <div class="footer-row">
+      <div class="total"> <i class="bi bi-people" aria-hidden="true"></i> {{totalStudents}}</div>
+      <div class="users">
+          <img src="{{studentImage1}}" alt="Image 001" />
+          <img src="{{studentImage2}}" alt="Image 001" />
+      </div>
+  </div>
+</li>
+</body>
