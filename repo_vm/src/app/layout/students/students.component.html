@@ -38,98 +38,31 @@
                     </div>
                 </header>
 
-                <ul class="projects">
-                    <div class="table-users">
-                        <div class="header"><strong>ITPC 11</strong> BSIT 1-1 Student List</div>
-                        
-                        <table cellspacing="0">
-                           <tr>
-                              <th>Profile Picture</th>
-                              <th>Name</th>
-                              <th>Email</th>
-                              <th>Student ID No.</th>
-                              <th>Grades</th>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent1.jpg" alt="" /></td>
-                              <td>Veronica C. Madrigal</td>
-                              <td>sampleemail1@gmail.com</td>
-                              <td>2134985</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent2.jpg" alt="" /></td>
-                              <td>Olaf G. Mensir</td>
-                              <td>sampleemail2.@gmail.com</td>
-                              <td>5028492</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent3.jpg" alt="" /></td>
-                              <td>Drake G. Delos Reyes</td>
-                              <td>sampleemail3@gmail.com</td>
-                              <td>21735293</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                           
-                           <tr>
-                              <td><img src="assets/images/samplestudent4.jpg" alt="" /></td>
-                              <td>Mary Jane F. Gonzales</td>
-                              <td>sampleemail4@gmail.com</td>
-                              <td>9251925</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                        </table>
-                     </div><br><br>
-
-                     <div class="table-users">
-                        <div class="header"><strong>ITPC 12</strong> BSIT 1-1 Student List</div>
-                        
-                        <table cellspacing="0">
-                           <tr>
-                              <th>Profile Picture</th>
-                              <th>Name</th>
-                              <th>Email</th>
-                              <th>Student ID No.</th>
-                              <th>Grades</th>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent1.jpg" alt="" /></td>
-                              <td>Veronica C. Madrigal</td>
-                              <td>sampleemail1@gmail.com</td>
-                              <td>2134985</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent2.jpg" alt="" /></td>
-                              <td>Olaf G. Mensir</td>
-                              <td>sampleemail2.@gmail.com</td>
-                              <td>5028492</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                     
-                           <tr>
-                              <td><img src="assets/images/samplestudent3.jpg" alt="" /></td>
-                              <td>Drake G. Delos Reyes</td>
-                              <td>sampleemail3@gmail.com</td>
-                              <td>21735293</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                           
-                           <tr>
-                              <td><img src="assets/images/samplestudent4.jpg" alt="" /></td>
-                              <td>Mary Jane F. Gonzales</td>
-                              <td>sampleemail4@gmail.com</td>
-                              <td>9251925</td>
-                              <td><a href="#">Grades</a></td>
-                           </tr>
-                        </table>
-                     </div>
+                <ul>
+                  <app-table *ngFor="let item of studentsData"
+                         course = "{{item.course}}"
+                         section = "{{item.section}}"
+                         row1StudentImage = "{{item.row1StudentImage}}"
+                         row1Name = "{{item.row1Name}}"
+                         row1Email = "{{item.row1Email}}"
+                         row1ID = "{{item.row1ID}}"
+                         row1Grades = "{{item.row1Grades}}"
+                         row2StudentImage = "{{item.row2StudentImage}}"                            
+                         row2Name = "{{item.row2Name}}"
+                         row2Email = "{{item.row2Email}}"
+                         row2ID = "{{item.row2ID}}"
+                         row2Grades = "{{item.row2Grades}}"
+                         row3StudentImage = "{{item.row3StudentImage}}"
+                         row3Name = "{{item.row3Name}}"
+                         row3Email = "{{item.row3Email}}"
+                         row3ID = "{{item.row3ID}}"
+                         row3Grades = "{{item.row3Grades}}"
+                         row4StudentImage = "{{item.row4StudentImage}}"
+                         row4Name = "{{item.row4Name}}"
+                         row4Email = "{{item.row4Email}}"
+                         row4ID = "{{item.row4ID}}"
+                         row4Grades = "{{item.row4Grades}}"
+                  ></app-table>
                 </ul>
             </section>
         </div>

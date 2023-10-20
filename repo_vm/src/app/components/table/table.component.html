@@ -1,1 +1,53 @@
-<p>table works!</p>
+<head>
+    <link stylesheet="table.component.scss">
+</head>
+<body>
+    <div class="table-users">
+        <div class="header"><strong>{{course}}</strong> {{section}}</div>
+        
+        <table cellspacing="0">
+           <tr>
+              <th>Profile Picture</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Student ID No.</th>
+              <th>Grades</th>
+           </tr>
+     
+           <tr>
+              <td><img src="{{row1StudentImage}}" alt="" /></td>
+              <td>{{row1Name}}</td>
+              <td>{{row1Email}}</td>
+              <td>{{row1ID}}</td>
+              <td><a href="{{row1Grades}}">Grades</a></td>
+           </tr>
+     
+           <tr>
+                <td><img src="{{row2StudentImage}}" alt="" /></td>
+                <td>{{row2Name}}</td>
+                <td>{{row2Email}}</td>
+                <td>{{row2ID}}</td>
+                <td><a href="{{row2Grades}}">Grades</a></td>
+           </tr>
+     
+           <tr>
+                <td><img src="{{row3StudentImage}}" alt="" /></td>
+                <td>{{row3Name}}</td>
+                <td>{{row3Email}}</td>
+                <td>{{row3ID}}</td>
+                <td><a href="{{row3Grades}}">Grades</a></td>
+           </tr>
+           
+           <tr>
+                <td><img src="{{row4StudentImage}}" alt="" /></td>
+                <td>{{row4Name}}</td>
+                <td>{{row4Email}}</td>
+                <td>{{row4ID}}</td>
+                <td><a href="{{row4Grades}}">Grades</a></td>
+           </tr>
+        </table>
+     </div><br><br>
+
+
+
+</body>

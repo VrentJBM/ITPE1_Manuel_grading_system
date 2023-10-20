@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { students_data } from 'src/shared_data/students_data';
 
 @Component({
   selector: 'app-students',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentsComponent implements OnInit {
 
+  studentsData = students_data;
   constructor() { }
 
   ngOnInit(): void {
